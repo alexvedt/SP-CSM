@@ -152,6 +152,69 @@ body{
     
  }
 
+footer{
+  background-color: #E6D6B5;
+}
+.footercontainer{
+  display: flex;
+  flex-direction: column;
+ 
+  /* width: 100vw;
+  height: 100vh; */
+}
+.leftdiv{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  /* padding-left: 1rem; */
+}
+
+.rightdiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.openhour,
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.openhour ul li,
+.contactinfo ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contactul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.footerh2{
+  text-align: center;
+}
+.footerul{
+  width: 80%;
+}
+.days{
+  display: inline-block;
+  min-width: 10rem;
+}
+
+
+
+
+
+
+
  @media screen and (max-width:767px){
     .hamburger,
     .toggle-menu{
@@ -191,5 +254,15 @@ body{
 }
 .heroimg{
   height: 20rem;
+}
+
+.footercontainer{
+  flex-direction: row;
+  justify-content: space-between;
+}
+.leftdiv{
+  margin: 0;
+  text-align: start;
+  width: 40%;
 }
  }
