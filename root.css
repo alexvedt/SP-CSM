@@ -116,6 +116,7 @@ body{
 .hamburger:before {
     top: -10px;
     width: 20px;
+    color: black;
 }
 .hamburger:after {
     top: 10px;
@@ -158,9 +159,8 @@ footer{
 .footercontainer{
   display: flex;
   flex-direction: column;
- 
-  /* width: 100vw;
-  height: 100vh; */
+  width: 90%;
+  margin: 0 auto;
 }
 .leftdiv{
   display: flex;
@@ -168,6 +168,13 @@ footer{
   margin: 0 auto;
   text-align: center;
   /* padding-left: 1rem; */
+}
+
+.infotext{
+  text-align: start;
+}
+.infotext h2{
+  text-align: start;
 }
 
 .rightdiv{
@@ -206,7 +213,7 @@ footer{
 }
 .days{
   display: inline-block;
-  min-width: 10rem;
+  min-width: 9rem;
 }
 
 
@@ -256,13 +263,43 @@ footer{
   height: 20rem;
 }
 
+footer{
+    width: 100vw;
+    height: 100%;
+    border-top: 1px solid #000000;
+}
 .footercontainer{
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+
+}
+.rightdiv{
+  justify-content: space-around;
+}
+.infotext,
+.infotext h2{
+  text-align: start;
+  width: 65%;
 }
 .leftdiv{
   margin: 0;
   text-align: start;
   width: 40%;
+  justify-content: space-between;
+}
+.testbox{
+  display: flex;
+  flex-direction: column;
+}
+.footerul{
+  width: 100%;
+}
+.days,
+.hours {
+  font-size: 1.2rem;
+  line-height: 35px;
+}
+.contactul{
+  line-height: 24px;
 }
  }

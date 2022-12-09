@@ -32,7 +32,7 @@
           <li><a href="/index.html">Home</a></li>
           <li><a href="#exhibition">Exhibitions</a></li>
           <li><a href="#">Get involved</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="#FAQ">FAQ</a></li>
           <li><a href="#">Special Events</a></li>
         </ul>
       </div>
@@ -91,24 +91,30 @@
           />
         </div>
         <div class="kidstext">
-          <p>Are you a young person looking to learn more about science?</p>
-          <p>
-            Come on down to our museum, there’s plenty to see and do. You can
-            learn about Newtonian physics from our bumper swing, or why not
-            travel back in time and meet our resident Woolly Mammoth? Our
-            exhibits are designed to be accessible for interested minds, so make
-            sure you come ready to learn and explore
+          <p class="kidsheadtext">
+            Are you a young person looking to learn more about science?
           </p>
-          <p>
-            We also have the Young Stars club which meets once a week on a
-            Saturday between 10:00 and 13:00 where you’ll get to explore and
-            experiment with our team of experts.
-          </p>
-          <p>
-            During the school holidays we run special holiday clubs where you
-            can join other children your age to go on a journey of discovery.
-            Each holiday we pick a new theme to explore.
-          </p>
+          <div class="buttoncontainer">
+            <p class="readmore">Show more/less</p>
+            <input type="checkbox" name="readmore" class="checkbox" />
+            <p class="kidssubtext">
+              Come on down to our museum, there’s plenty to see and do. You can
+              learn about Newtonian physics from our bumper swing, or why not
+              travel back in time and meet our resident Woolly Mammoth? Our
+              exhibits are designed to be accessible for interested minds, so
+              make sure you come ready to learn and explore
+            </p>
+            <p class="kidssubtext">
+              We also have the Young Stars club which meets once a week on a
+              Saturday between 10:00 and 13:00 where you’ll get to explore and
+              experiment with our team of experts.
+            </p>
+            <p class="kidssubtext">
+              During the school holidays we run special holiday clubs where you
+              can join other children your age to go on a journey of discovery.
+              Each holiday we pick a new theme to explore.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -128,16 +134,20 @@
               As a community-driven museum, we want to work with schools to
               create places of learning and exploring.
             </p>
-            <p>
-              Our team are on hand to give your students guided tours of the
-              museum, teach them in our learning laboratory, and provide great
-              video presentations that will excite and inspire them.
-            </p>
-            <p>
-              Please get in touch with us here to find out more about our
-              facilities and to arrange a time to bring your students through
-              for a visit.
-            </p>
+            <div class="buttoncontainer">
+              <p class="readmore">Show more/less</p>
+              <input type="checkbox" name="readmore" class="checkbox" />
+              <p class="adultsubtext">
+                Our team are on hand to give your students guided tours of the
+                museum, teach them in our learning laboratory, and provide great
+                video presentations that will excite and inspire them.
+              </p>
+              <p class="adultsubtext">
+                Please get in touch with us here to find out more about our
+                facilities and to arrange a time to bring your students through
+                for a visit.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -156,25 +166,31 @@
               Are you looking to get involved with our team of researchers and
               academics?
             </p>
-            <p>
-              Our museum offers various ways for you to use our resources and
-              contribute towards them.
-            </p>
-            <p>
-              We have online records, laboratory space, and a working
-              relationship with a number of universities around the country.
-            </p>
+            <div class="buttoncontainer">
+              <p class="readmore">Show more/less</p>
+              <input type="checkbox" name="readmore" class="checkbox" />
+              <p class="researchsubtext">
+                Our museum offers various ways for you to use our resources and
+                contribute towards them.
+              </p>
+              <p class="researchsubtext">
+                We have online records, laboratory space, and a working
+                relationship with a number of universities around the country.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="exhibitionheader">
+      </div>
+      <div class="exhibitionheader">
         <h1 class="headtext headexhibitiontext">OUR EXHIBITIONS</h1>
-      <button class="visitbtn"><a href="index.html">Plan your visit!</a></button>
+        <button class="visitbtn">
+          <a href="index.html">Plan your visit!</a>
+        </button>
       </div>
       <div class="exhibitioncontainer" id="exhibition">
         <div class="cosmocontainer">
-        <h1 class="headtext headexhibitiontext">Cosmology</h1>
+          <h1 class="headtext headexhibitiontext">Cosmology</h1>
           <div class="cosmosubcontainer">
             <div class="cosmoimgcontainer overlayeffect">
               <img
@@ -184,9 +200,7 @@
               />
             </div>
             <div class="adulttext">
-              <p>
-                Explore the wonders of our cosmos.
-              </p>
+              <p>Explore the wonders of our cosmos.</p>
             </div>
           </div>
         </div>
@@ -202,91 +216,116 @@
             </div>
             <div class="adulttext">
               <p>
-                For centuries, philosophers and scientists have wrestled with the question of our origins.
+                For centuries, philosophers and scientists have wrestled with
+                the question of our origins.
               </p>
             </div>
           </div>
         </div>
-    </div>
+      </div>
 
-    <div class="exhibitioncontainer">
-      <div class="biomedcontainer">
-      <h1 class="headtext headexhibitiontext">Bio & Medicine</h1>
-        <div class="biomedsubcontainer">
-          <div class="biomedimgcontainer overlayeffect">
-            <img
-              class="biomedimg"
-              src="/SemesterProject1/images/samuel-zeller-113381.jpg"
-              alt="Bio skeleton image"
-            />
+      <div class="exhibitioncontainer">
+        <div class="biomedcontainer">
+          <h1 class="headtext headexhibitiontext">Bio & Medicine</h1>
+          <div class="biomedsubcontainer">
+            <div class="biomedimgcontainer overlayeffect">
+              <img
+                class="biomedimg"
+                src="/SemesterProject1/images/samuel-zeller-113381.jpg"
+                alt="Bio skeleton image"
+              />
+            </div>
+            <div class="adulttext">
+              <p>
+                From micro-organisms to the human body, major breakthroughs in
+                biology are offering us unique insights into the great wonders
+                of the tiny world.
+              </p>
+            </div>
           </div>
-          <div class="adulttext">
-            <p>
-              From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world.
-            </p>
+        </div>
+        <div class="roboaicontainer">
+          <h1 class="headtext headexhibitiontext">Robotics & AI</h1>
+          <div class="roboaisubcontainer">
+            <div class="roboaiimgcontainer overlayeffect">
+              <img
+                class="roboaiimg"
+                src="/SemesterProject1/images/samuel-zeller-158996.jpg"
+                alt="Girl wearing VR glasses"
+              />
+            </div>
+            <div class="adulttext">
+              <p>
+                The information revolution is here and robotics and artificial
+                intelligence are the science of the future.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="roboaicontainer">
-        <h1 class="headtext headexhibitiontext">Robotics & AI</h1>
-        <div class="roboaisubcontainer">
-          <div class="roboaiimgcontainer overlayeffect">
-            <img
-              class="roboaiimg"
-              src="/SemesterProject1/images/samuel-zeller-158996.jpg"
-              alt="Girl wearing VR glasses"
-            />
-          </div>
-          <div class="adulttext">
-            <p>
-              The information revolution is here and robotics and artificial intelligence are the science of the future.            </p>
-          </div>
-        </div>
-      </div>
-  </div>
+    </div>
   </body>
-  <footer>
+  <footer id="FAQ">
     <div class="footercontainer">
       <div class="leftdiv">
-        <div class="infotext1">
+        <div class="infotext">
           <h2>Accessibility</h2>
-          <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
+          <p>
+            The museum has wheelchair accessibility ramps. It also has audio
+            guides and braille display signs for the visually impaired.
+          </p>
         </div>
-        <div class="infotext2">
+        <div class="infotext">
           <h2>Food and drink</h2>
-          <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
+          <p>
+            There is a café attached to the museum where you can get light
+            lunches, soft drinks, coffee, snacks and more.
+          </p>
         </div>
-        <div class="infotext3">
+        <div class="infotext">
           <h2>Shop</h2>
-          <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
+          <p>
+            Our shop offers a range of memorabilia from the museum as well as
+            great gifts and activity packs that allow you to continue to explore
+            science even after you’ve left the museum.
+          </p>
         </div>
       </div>
       <div class="rightdiv">
         <div class="openhour">
-          <h2 class="footerh2">Opening Hours:</h2>
-          <ul class="footerul">
-            <li>
-              <span class="days">Monday</span> <span class="hours">Closed</span>
-            </li>
-            <li>
-              <span class="days">Tuesday:</span> <span class="hours">10:00-16:00</span>
-            </li>
-            <li>
-              <span class="days">Wednesday:</span> <span class="hours">10:00-16:00</span>
-            </li>
-            <li>
-              <span class="days">Thursday:</span> <span class="hours">10:00-16:00</span>
-            </li>
-            <li>
-              <span class="days">Friday:</span> <span class="hours">10:00-19:00</span>
-            </li>
-            <li>
-              <span class="days">Saturday:</span> <span class="hours">09:00-16:00</span>
-            </li>
-            <li>
-              <span class="days">Sunday:</span> <span class="hours">09:00-13:00</span>
-            </li>
-          </ul>
+          <div class="testbox">
+            <h2 class="footerh2">Opening Hours:</h2>
+            <ul class="footerul">
+              <li>
+                <span class="days">Monday</span>
+                <span class="hours">Closed</span>
+              </li>
+              <li>
+                <span class="days">Tuesday:</span>
+                <span class="hours">10:00-16:00</span>
+              </li>
+              <li>
+                <span class="days">Wednesday:</span>
+                <span class="hours">10:00-16:00</span>
+              </li>
+              <li>
+                <span class="days">Thursday:</span>
+                <span class="hours">10:00-16:00</span>
+              </li>
+              <li>
+                <span class="days">Friday:</span>
+                <span class="hours">10:00-19:00</span>
+              </li>
+              <li>
+                <span class="days">Saturday:</span>
+                <span class="hours">09:00-16:00</span>
+              </li>
+              <li>
+                <span class="days">Sunday:</span>
+                <span class="hours">09:00-13:00</span>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="contactinfo">
           <h2 class="footerh2">Location & Contact</h2>

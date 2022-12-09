@@ -130,13 +130,51 @@ p{
     font-family: 'Indie Flower', cursive;
     border-radius: 10px;
     opacity: 0;
-    transition: 300ms ease-in-out;
+    animation: wobble-blur 1s ease-in-out infinite;
 }
 .overlayeffect:hover::after{
     opacity: 1;
 }
+@keyframes wobble-blur {
+    0% {
+      filter: blur(0);
+    }
+    50% {
+      filter: blur(5px);
+    }
+    100% {
+      filter: blur(0);
+    }
+  }
 
 
+
+.buttoncontainer{
+    position: relative;
+}
+.checkbox{
+    position: absolute;
+    top: 0;
+    width: 7rem;
+    cursor: pointer;
+    opacity: 0;
+}
+.kidssubtext,
+.adultsubtext,
+.researchsubtext{
+    display: none;
+}
+.checkbox:checked + .kidssubtext,
+.checkbox:checked + .adultsubtext,
+.checkbox:checked + .researchsubtext{
+    display: block;
+}
+/* .checkbox:checked{
+    top: 9rem;
+} */
+.readmore{
+    text-decoration: underline;
+}
 
 
 
@@ -206,5 +244,9 @@ p{
     }
     .visitbtn a{
         font-size: 1.5rem;
+    }
+
+    .checkbox{
+        width: 7rem;
     }
 }
