@@ -130,8 +130,39 @@ p{
     font-family: 'Indie Flower', cursive;
     border-radius: 10px;
     opacity: 0;
-    animation: wobble-blur 1s ease-in-out infinite;
+    animation: wobble-blur 1s ease-in-out ;
 }
+/* read more button */
+.buttoncontainer{
+    position: relative;
+  }
+  .checkbox{
+    position: absolute;
+    top: 0;
+    width: 7rem;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .kidssubtext,
+  .adultsubtext,
+  .researchsubtext,
+  .eventsubtext{
+    display: none;
+  }
+  .checkbox:checked + .kidssubtext,
+  .checkbox:checked + .adultsubtext,
+  .checkbox:checked + .researchsubtext,
+  .checkbox:checked + .eventsubtext{
+    display: block;
+  }
+  /* .checkbox:checked{
+    top: 9rem;
+  } */
+  .readmore{
+    text-decoration: underline;
+  }
+  
+
 .overlayeffect:hover::after{
     opacity: 1;
 }
@@ -146,35 +177,6 @@ p{
       filter: blur(0);
     }
   }
-
-
-
-.buttoncontainer{
-    position: relative;
-}
-.checkbox{
-    position: absolute;
-    top: 0;
-    width: 7rem;
-    cursor: pointer;
-    opacity: 0;
-}
-.kidssubtext,
-.adultsubtext,
-.researchsubtext{
-    display: none;
-}
-.checkbox:checked + .kidssubtext,
-.checkbox:checked + .adultsubtext,
-.checkbox:checked + .researchsubtext{
-    display: block;
-}
-/* .checkbox:checked{
-    top: 9rem;
-} */
-.readmore{
-    text-decoration: underline;
-}
 
 
 
@@ -249,4 +251,5 @@ p{
     .checkbox{
         width: 7rem;
     }
+    
 }

@@ -1,0 +1,99 @@
+
+
+body {
+    background: linear-gradient(178deg, #e6d6b5, #000000, #000000);
+    background-size: 600% 600%;
+
+    animation: AnimationName 10s ease none;
+}
+
+@keyframes AnimationName {
+    0%{background-position:65% 0%}
+    50%{background-position:36% 100%}
+    100%{background-position:0% 100%}
+}
+.headtext,
+.eventtext {
+    color: white;
+    animation: fadeIn 10s;
+    /* animation-delay: 2s; */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.eventcontainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}
+.headtext{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+.eventtext{
+/* text-align: center; */
+}
+.eventsubtext{
+    text-align: start;
+}
+
+.eventimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+
+/* read more button */
+.buttoncontainer{
+    position: relative;
+  }
+  .checkbox{
+    position: absolute;
+    top: 0;
+    width: 7rem;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .kidssubtext,
+  .adultsubtext,
+  .researchsubtext,
+  .eventsubtext{
+    display: none;
+  }
+  .checkbox:checked + .kidssubtext,
+  .checkbox:checked + .adultsubtext,
+  .checkbox:checked + .researchsubtext,
+  .checkbox:checked + .eventsubtext{
+    display: block;
+  }
+  /* .checkbox:checked{
+    top: 9rem;
+  } */
+  .readmore{
+    text-decoration: underline;
+  }
+  
+
+
+
+
+@media (min-width :767px){
+    .eventcontainer{
+        max-width: 1440px;
+        }
+        .eventimgcontainer{
+            margin: 0 auto;
+            width: 100%;
+            height: fit-content;
+        }
+}

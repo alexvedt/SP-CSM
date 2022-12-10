@@ -221,7 +221,6 @@ footer{
 
 
 
-
  @media screen and (max-width:767px){
     .hamburger,
     .toggle-menu{
@@ -302,4 +301,5 @@ footer{
 .contactul{
   line-height: 24px;
 }
+
  }
