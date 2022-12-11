@@ -3,14 +3,15 @@
 body {
     background: linear-gradient(178deg, #e6d6b5, #000000, #000000);
     background-size: 600% 600%;
-
-    animation: AnimationName 10s ease none;
-}
-
-@keyframes AnimationName {
+    animation: AnimationName 10s ease;
+    animation-fill-mode: forwards;
+    transform: translate3d(0,0,0);
+  }
+  
+  @keyframes AnimationName {
     0%{background-position:65% 0%}
-    50%{background-position:36% 100%}
     100%{background-position:0% 100%}
+    
 }
 .headtext,
 .eventtext {

@@ -22,7 +22,18 @@ html {
   }
 body{
   scroll-behavior: smooth;
-}
+  animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
   .h1{
     font-family: 'Indie Flower', cursive, sans-serif;
   }
@@ -263,7 +274,7 @@ footer{
 }
 
 footer{
-    width: 100vw;
+/*     width: 100vw; */
     height: 100%;
     border-top: 1px solid #000000;
 }
@@ -274,6 +285,7 @@ footer{
 }
 .rightdiv{
   justify-content: space-around;
+  padding: 1rem 0;
 }
 .infotext,
 .infotext h2{
@@ -285,6 +297,7 @@ footer{
   text-align: start;
   width: 40%;
   justify-content: space-between;
+  padding: 1rem 0;
 }
 .testbox{
   display: flex;
