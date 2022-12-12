@@ -5,7 +5,9 @@ body {
     background-size: 600% 600%;
     animation: AnimationName 10s ease;
     animation-fill-mode: forwards;
-    transform: translate3d(0,0,0);
+    will-change: background;
+    transform: none;
+
   }
   
   @keyframes AnimationName {
@@ -97,4 +99,11 @@ body {
             width: 100%;
             height: fit-content;
         }
+
+  
+/* i added this because the transform bugs out the hamburger menu on mobile version so */
+body{
+  transform: translate3d(0, 0, 0);}
+
 }
+
