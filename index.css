@@ -6,12 +6,10 @@
 .headtext,
 .headadulttext
 {
-    font-family: 'Indie Flower', cursive;
     margin: 2rem auto;
     font-size: 1.5rem;
     text-align: center;
     border-bottom: 1px solid #00000070;
-    font-weight: lighter;
 }
 .explorecontainer{
     display: flex;
@@ -114,7 +112,7 @@ p{
     border-radius: 10px;
 }
 .overlayeffect::after{
-    content: "Click Here";
+    content: "Learn more!";
     position: absolute;
     top: 0;
     left: 0;
@@ -184,7 +182,6 @@ p{
 @media (min-width :767px){
     .museumcontainer{
     width: 90%;
-    max-width: 1440px;
     }
     .museumimagecontainer{
         height: 25rem;

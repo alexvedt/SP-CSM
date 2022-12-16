@@ -1,16 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+
 :root {
     --beige-main: #E6D6B5;
     --text-main: #0c0e0e;
     --background-grey: #1E1E1E; 
   
   }
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-  @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
- 
- *html{
-  border: 1px red;
 
- }
   *,
 *::before,
 *::after {
@@ -19,10 +18,14 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
   }
 body{
   scroll-behavior: smooth;
   animation: fadeIn 1s;
+  }
+  main{
+    padding-bottom: 2rem;
   }
   
   @keyframes fadeIn {
@@ -34,9 +37,17 @@ body{
     }
   }
   
-  .h1{
-    font-family: 'Indie Flower', cursive, sans-serif;
+  h1,
+  h2{
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  
   }
+  .headexhibitiontext{
+    font-weight: 600;
+  }
+ 
 
   .logo a img{
     max-width: 5rem;
@@ -53,12 +64,16 @@ body{
     top:0;
     z-index: 100;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: var(--beige-main);
     padding: 0 2rem;
     border-bottom: 1px solid black;
+  }
+  .headercontainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;  
+    width: 90%;
+    margin: 0 auto;
   }
 .headertext{
   display: flex;
@@ -89,12 +104,18 @@ body{
     z-index: 1;
     transition: 0.5s;
     margin: 0;
-
   }
+
+
+
+  
   .menu li{
     list-style-type: none;
   }
   .menu li a{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
     color: black;
     text-decoration: none;
     display: block;
@@ -172,7 +193,7 @@ footer{
 .footercontainer{
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .leftdiv{
@@ -218,7 +239,7 @@ footer{
   align-items: center;
   padding: 0;
 }
-.footerh2{
+.footerh3{
   text-align: center;
 }
 .footerul{
@@ -241,6 +262,9 @@ footer{
     }
     .header{
         padding: 10px 20px;
+    }
+    .headercontainer{
+      width: 100%;
     }
     .menu{
         justify-content: start;

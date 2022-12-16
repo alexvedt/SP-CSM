@@ -1,0 +1,146 @@
+.specialeventcontainer{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+}
+
+.eventcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.specialimagecontainer{
+    margin: 0 auto;
+    width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+   .specialimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.eventdesctext{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+p{
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 10px auto;
+    
+}
+
+
+.headtext,
+.specialtext
+{
+    
+    font-family: 'Indie Flower', cursive;
+    margin: 2rem auto;
+    font-size: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    text-align: center;
+    font-weight: lighter;
+    border-bottom:1px solid #1E1E1E;
+}
+
+.specialtext{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    border-bottom: none;
+
+}
+.containerbackground{
+    background-color: #1E1E1E;
+    width: 100%;
+
+}
+.whitetext{
+    color: white;
+    border-bottom:1px solid #E6D6B5;
+    
+}
+.specialtext{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    border-bottom: none;
+
+}
+
+
+.visitbtn{
+    display: flex;
+    margin: 0 auto;
+    background-image: linear-gradient(to left,#E6D6B5,#E6D6B570,#E6D6B5,#E6D6B590,#E6D6B5);
+    background-size: 200%;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.6s;
+    padding: 0.5rem 1rem;
+}
+.visitbtn a{
+    font-family: 'Indie Flower', cursive;
+    text-decoration: none;
+    color: #000000;
+}
+.visitbtn:hover{
+    background-position: right;
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .specialimg{
+        width: 45%;
+    }
+    .specialimagecontainer{
+        height: 100%;
+        width: 80%;
+    }
+    .eventhead{
+        font-size: 3rem;
+    }
+    .specialtext{
+    line-height: 35px;
+    font-style: italic;
+    font-size: 1.5rem;
+
+    
+    }
+    .eventcontainer{
+        flex-direction: row;
+        width:90%;
+        margin: 0 auto;
+    }
+    .eventdesctext{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .headtext{
+        font-size: 2.2rem;
+    }
+    .secondcolumnevent{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .visitbtn a{
+        font-size: 1.5rem;
+    }
+}
+    

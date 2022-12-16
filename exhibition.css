@@ -3,12 +3,12 @@
 body {
     background: linear-gradient(178deg, #e6d6b5, #000000, #000000);
     background-size: 600% 600%;
-    animation: AnimationName 10s ease;
+    animation: AnimationName 8s ease;
     animation-fill-mode: forwards;
     will-change: background;
     transform: none;
-    /* i added transform none because the transform bugs out the hamburger menu on mobile version, but i need it in desktop as it smoothens the animation */
-
+    /* i added transform none because the transform bugs out the hamburger menu on mobile version, but i need it in desktop as it smoothens the animation
+ */
 
   }
   
@@ -40,7 +40,7 @@ body {
     padding-bottom: 1rem;
 }
 .headtext{
-    font-family: 'Indie Flower', cursive;
+    font-size: 2.5rem ;
     text-align: center;
 }
 
@@ -134,7 +134,7 @@ padding-bottom: 1rem;
             width: 100%;
             height: fit-content;
         }
-.evolutionimgcontainer{
+.eximgcontainer{
   width: 75%;
 }
   
