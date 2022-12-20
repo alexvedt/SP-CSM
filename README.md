@@ -1,7 +1,12 @@
 Community Science Museum Website
+
+
 Welcome to the Community Science Museum website! We are an interactive science museum located in your town/city, targeting primary and middle school children (ages 7-15) and families with young children.
 
+
+
 Home Page
+
 On the home page, you will find:
 
 Information about the museum, including our mission, location, and hours of operation
