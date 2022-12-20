@@ -132,7 +132,7 @@ p{
     font-style: italic;
     font-size: 1.5rem;
     text-align: start;
-        margin: 0 auto;
+    margin: 0 auto;
     
     }
     .eventcontainer{
@@ -162,10 +162,11 @@ p{
     .interntext{
         padding-bottom: 2rem;
         }
-    }
+    
 .secondcolumnevent{
     width: 90%;
     padding-top: none;
+}
 }
     
 
