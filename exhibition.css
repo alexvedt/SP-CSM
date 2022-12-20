@@ -8,6 +8,7 @@ body {
     will-change: background;
     transform: none;
     /* i added transform none because the transform bugs out the hamburger menu on mobile version, but i need it in desktop as it smoothens the animation
+    see text under media quieres for more info
  */
 
   }
@@ -95,16 +96,11 @@ padding-bottom: 1rem;
     cursor: pointer;
     opacity: 0;
   }
-  .kidssubtext,
-  .adultsubtext,
-  .researchsubtext,
   .eventsubtext{
     display: none;
 
   }
-  .checkbox:checked + .kidssubtext,
-  .checkbox:checked + .adultsubtext,
-  .checkbox:checked + .researchsubtext,
+
   .checkbox:checked + .eventsubtext{
     display: block;
   }
@@ -114,11 +110,9 @@ padding-bottom: 1rem;
     border: 1px solid #ffffff50;
     padding: 0.75rem;
   }
-  /* .checkbox:checked{
-    top: 9rem;
-  } */
+
   .readmore{
-    text-decoration: underline;
+    text-decoration: underline #eeeeee80;
   }
   
 
@@ -142,4 +136,7 @@ body{
   transform: translate3d(0, 0, 0);}
 
 }
+/* body transform is added due to the bug when it was in the original css. Me and Mo tried to fix it but we could not
+handle the bug ourself. I fixed this by removing the transform:translate on app and only have it on desktop. 
+this is added to make the animation smoother when loading and less laggy.  */
 
