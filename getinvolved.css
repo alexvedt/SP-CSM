@@ -36,7 +36,7 @@ p{
     font-size: 1rem;
     line-height: 1.2rem;
     margin: 10px auto;
-    
+
 }
 
 
@@ -47,11 +47,12 @@ p{
     font-family: 'Indie Flower', cursive;
     margin: 2rem auto;
     font-size: 1rem;
-    text-align: center;
+    text-align: start;
     font-weight: lighter;
-    /* border-bottom:1px solid #1E1E1E; */
 }
-
+.headtext{
+    text-align: center;
+}
 .specialtext{
     font-family: 'Roboto';
     font-style: normal;
@@ -62,14 +63,17 @@ p{
 .containerbackground{
     background-color: #1E1E1E;
     width: 100%;
-    /* border-top: 1px solid #E6D6B5; */
     border-bottom: 1px solid #E6D6B5;
 
 }
 .whitetext{
     color: white;
-    border-bottom:1px solid #E6D6B5;
+    /* border-bottom:1px solid #E6D6B5; */
     
+}
+.headtext{
+    border-bottom:1px solid #E6D6B5;
+
 }
 .interntext{
     border-bottom: 1px solid #1E1E1E;
@@ -110,22 +114,22 @@ p{
 }
 .visitbtn:hover{
     background-position: right;
-
-
 }
-
 
 
 @media screen and (min-width: 768px) {
     .specialimg{
-        width: 45%;
+        width: 50%;
+        height: 40rem;
     }
     .specialimagecontainer{
         height: 100%;
         width: 80%;
+        
     }
     .eventhead{
         font-size: 3rem;
+        border-bottom: none;
     }
     .specialtext{
     line-height: 35px;
@@ -139,7 +143,6 @@ p{
         flex-direction: row;
         width:90%;
         margin: 0 auto;
-        height: 80vh;
     }
     .eventdesctext{
         width: 50%;
