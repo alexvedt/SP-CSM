@@ -200,14 +200,16 @@ footer{
   flex-direction: column;
   margin: 0 auto;
   text-align: center;
-  /* padding-left: 1rem; */
+  width: 90%;
 }
 
 .infotext{
   text-align: start;
 }
-.infotext h2{
-  text-align: start;
+.infotext h2,
+.testbox h2,
+.contactinfo h2{
+  text-align: center;
 }
 
 .rightdiv{
@@ -318,9 +320,11 @@ footer{
   padding: 1rem 0;
 }
 .infotext,
-.infotext h2{
+.infotext h2
+{
   text-align: start;
   width: 65%;
+
 }
 .leftdiv{
   margin: 0;

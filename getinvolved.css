@@ -121,7 +121,12 @@ p{
     .specialimg{
         width: 50%;
         height: 40rem;
+        /* this (height) might be semanticaly bad code, 
+        but it was the best i could do after i got bugs on the 
+        netlify version compared to the live server version with
+n       o issues. */
     }
+    
     .specialimagecontainer{
         height: 100%;
         width: 80%;
