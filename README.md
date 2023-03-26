@@ -19,3 +19,5 @@ FAQ
 In the footer, you will find a FAQ section where you can find answers to common questions about the museum.
 
 We hope you enjoy exploring our website and learning more about the Community Science Museum. We look forward to seeing you at the museum soon!
+
+Site: https://dreamy-moxie-d1beb3.netlify.app/
