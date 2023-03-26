@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Special Events</title>
-    <meta name="description" content="Special events Vommunity Science Museum" />
+    <title>Get Involved</title>
+    <meta name="description" content="get involved community science museum" />
     <meta
       name="keywords"
-      content="Special, events, community, science, museum, fun, family"
+      content="get involved, support, community, science, museum"
     />
     <link rel="stylesheet" href="root.css" />
-    <link rel="stylesheet" href="specialevent.css" />
+    <link rel="stylesheet" href="contactpage.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <script defer type="module" src="/script/contactform.js"></script>
     <script>
       (function(h,o,t,j,a,r){
           h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -29,123 +30,68 @@
   </head>
   <body>
     <header class="header">
-        <div class="headercontainer">
-      <div class="logo">
-        <a href="/index.html">
-          <img
-            class="logo"
-            src="/SemesterProject1/images/Clear logo.png"
-            alt="logo"
-          />
-        </a>
-      </div>
-      <div class="headertext">Community Science Museum</div>
-      <div class="navigation">
-        <input type="checkbox" class="toggle-menu" />
-        <div class="hamburger"></div>
-
-        <ul class="menu animate__fadeInTopRight">
+      <div class="headercontainer">
+        <div class="logo">
+          <a href="/index.html">
+            <img
+              class="logo"
+              src="/SemesterProject1/images/Clear logo.png"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <div class="headertext">Community Science Museum</div>
+        <div class="navigation">
+          <input type="checkbox" class="toggle-menu" />
+          <div class="hamburger"></div>
+          <ul class="menu animate__fadeInTopRight">
             <li><a href="/index.html">Home</a></li>
             <li><a href="/index.html#exhibition">Exhibitions</a></li>
             <li><a href="/getinvolved.html">Get involved</a></li>
             <li><a href="#FAQ">FAQ</a></li>
             <li><a href="/specialevents.html">Special Events</a></li>
           </ul>
+        </div>
       </div>
-    </div>
     </header>
     <main>
+      <!-- <p><a href="#" onclick="window.history.back(); return false;">Go back and explore more</a></p> -->
       <img
         src="/SemesterProject1/images/lab-512503_1920.jpg"
         alt="lab hero image"
         class="heroimg"
       />
-      <div class="specialeventcontainer">
-        <div class="specialheadtext">
-            <h1 class="headtext">SPECIAL EVENTS AND EXHIBITIONS</h1>
-          </div>
+      <div class="getinvoledcontainer containerbackground">
+        <div class="specialheadtext whitetext">
+          <h1 class="headtext">CONTACT US</h1>
+        </div>
         <div class="eventcontainer">
           <div class="specialimagecontainer">
-            <img
-              src="/SemesterProject1/images/samuel-zeller-158996.jpg"
-              alt="Picture of a women with VR glasses"
-              class="specialimg"
-            />
-          </div>
-          <div class="eventdesctext">
-            <div class="specialheadtext">
-                <h2 class="headtext eventhead">VISITING PROFESSOR OF AUSTRONAUTS</h2>
-              </div>
-            <p class="specialtext">
-                It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.
-            </p>
-            <button class="visitbtn">
-                <a href="#FAQ">Plan your visit!</a>
-              </button>
-          </div>
-        </div>
-        </div>
-      </div>
-
-      <div class="specialeventcontainer containerbackground">
-        <div class="eventcontainer">
-          <div class="eventdesctext">
-            <div class="specialheadtext">
-                <h2 class="headtext eventhead whitetext">NIGHTS IN THE MUSEUM</h2>
-              </div>
-            <p class="specialtext whitetext">
-                Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.
-            </p>
-            <button class="visitbtn">
-                <a href="#FAQ">Plan your visit!</a>
-              </button>
-          </div>
-          <div class="specialimagecontainer secondcolumnevent">
-            <img
-              src="/SemesterProject1/images/nightinmuseum.jpg"
-              alt="Picture of the museum at night"
-              class="specialimg"
-            />
+            <div class="contact-container">
+              <form action="" method="POST" class="form-container" id="formField">
+                <div id="error-name" class="error"></div>
+                <input class="contact-form-text" type="text" name="name" id="nameField" placeholder="Name" />
+      
+                <div id="error-subject" class="error"></div>
+                <input class="contact-form-text" name="subject" id="subjectField" placeholder="Subject (Min characters: 10)"></input>
+            
+                <div id="error-email" class="error"></div>
+                <input class="contact-form-text" type="email" name="email" id="emailField" placeholder="Email" />
+            
+                <div id="error-address" class="error"></div>
+                <input class="contact-form-text" type="address" name="address" id="addressField" placeholder="Address (Min characters: 25)" />
+            
+                <div id="error-message" class="error"></div>
+                <textarea class="contact-form-text" name="message" id="messageField" cols="30" rows="10" placeholder="Write your message..(Min characters: 10)"></textarea>
+            
+                <button class="visitbtn" type="submit" id="submitButton" placeholder="Your form is ready to Submit">Submit</button>
+                <div id="error-container" class="error"></div>
+              </form>
           </div>
         </div>
       </div>
-
-      <div class="specialeventcontainer">
-        <div class="eventcontainer">
-          <div class="specialimagecontainer">
-            <img
-              src="/SemesterProject1/images/sciencewoman 19.png"
-              alt="Picture of sciencewoman looking at a generator"
-              class="specialimg"
-            />
-          </div>
-          <div class="textcontainer">
-          </div>
-          <div class="eventdesctext">
-            <div class="specialheadtext">
-                <h2 class="headtext eventhead">ENERGETICA EXHIBITION ON LOAN</h2>
-              </div>
-            <p class="specialtext">
-                On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. 
-                It’s a series of installations that allow visitors to experience the power of the elements as we harness them. 
-                            </p>
-                            <button class="visitbtn">
-                                <a href="#FAQ">Plan your visit!</a>
-                              </button>
-          </div>
-        </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-    </main>
+  </main>
   </body>
   <footer id="FAQ">
     <div class="footercontainer">
